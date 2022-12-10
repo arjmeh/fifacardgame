@@ -1,0 +1,26 @@
+{
+  "name": "fifacardgame",
+  "version": "1.0.0",
+  "description": "fifa card game",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjmeh/fifacardgame.git"
+  },
+  "author": "Arjun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arjmeh/fifacardgame/issues"
+  },
+  "homepage": "https://github.com/arjmeh/fifacardgame#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
