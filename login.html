@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
+    <div class="background"></div>
     <div class="grid-container">
         <div class="grid-title">CSAFifa</div>
-        <div class="grid-form-username">
-                <input type="text" placeholder="username">
-        </div>
-        <div class="grid-form-password">
-            <input type="password" placeholder="password">
-        </div>
-        <div class="grid-form-submit">
-            <input type="button" value="Login">
+        <div class="grid-form">
+            <form>
+                <input type="text" name="username" placeholder='Username' class="username-input" required>
+                <br>
+                <input type="password" name="password" placeholder='Password' class="password-input" required>
+                <br>
+                <button type="submit" class="login-button">Login</button>
+              </form>
+              
         </div>
     </div>
 
