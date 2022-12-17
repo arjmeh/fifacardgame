@@ -136,26 +136,35 @@ toggleButton.addEventListener('click', /*#__PURE__*/_asyncToGenerator( /*#__PURE
           // const returnValue = await axios.get('http://127.0.0.1:5000/getData');
           // console.log(returnValue.data);
           // doPostRequest('testing')
-          fetch('http://127.0.0.1:5000/post', {
-            method: 'POST',
-            body: JSON.stringify('hi')
-          }).then(function (response) {
-            return response.text();
-          }).then(function (data) {
-            console.log(data);
-          });
+
+          //     fetch('http://127.0.0.1:5000/post', {
+          //     method: 'POST',
+          //     headers: {
+          //     'Content-Type': 'application/json'
+          //     },
+          //     body: JSON.stringify({
+          //     name: 'dogwater'
+          //     })
+          // })
+          //   .then((postresponse) => postresponse.json())
+          //   .then((postdata) => console.log(postdata))
+          //   .catch((posterror) => console.error(posterror));
           fetch('http://127.0.0.1:5000/get').then(function (response) {
             return response.text();
           }).then(function (data) {
-            console.log(data);
+            var responsedata = data;
+            console.log(responsedata);
+          }).catch(function (error) {
+            return console.error(error);
           });
-        case 3:
+        case 2:
         case "end":
           return _context.stop();
       }
     }
   }, _callee);
 })));
+//data is the get data
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -181,7 +190,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62092" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56506" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
