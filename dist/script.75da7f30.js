@@ -137,26 +137,29 @@ toggleButton.addEventListener('click', /*#__PURE__*/_asyncToGenerator( /*#__PURE
           // console.log(returnValue.data);
           // doPostRequest('testing')
 
-          //     fetch('http://127.0.0.1:5000/post', {
-          //     method: 'POST',
-          //     headers: {
-          //     'Content-Type': 'application/json'
-          //     },
-          //     body: JSON.stringify({
-          //     name: 'dogwater'
-          //     })
-          // })
-          //   .then((postresponse) => postresponse.json())
-          //   .then((postdata) => console.log(postdata))
-          //   .catch((posterror) => console.error(posterror));
-          fetch('http://127.0.0.1:5000/get').then(function (response) {
-            return response.text();
-          }).then(function (data) {
-            var responsedata = data;
-            console.log(responsedata);
-          }).catch(function (error) {
-            return console.error(error);
+          fetch('http://127.0.0.1:5000/post', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Access-Control-Allow-Origin': '*'
+            },
+            body: JSON.stringify({
+              "ani": 'cataa'
+            })
+          }).then(function (postresponse) {
+            return postresponse.json();
+          }).then(function (postdata) {
+            return console.log(postdata);
+          }).catch(function (posterror) {
+            return console.error(posterror);
           });
+          // fetch('http://127.0.0.1:5000/get')
+          // .then(response => response.text())
+          // .then(data => {
+          // let responsedata = data;
+          // console.log(responsedata);
+          // })
+          // .catch((error) => console.error(error));
         case 2:
         case "end":
           return _context.stop();
@@ -190,7 +193,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56506" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49373" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('CSAFifaBackgroundTransparent.png');
+    background-image: url('/ BackgroundTransparent.ce73a87c.png');
     background-repeat: no-repeat;
     background-size:auto;
     background-position: center;
@@ -73,7 +73,8 @@ body {
 
 
 .signuplink {
-    padding: 0.4rem;
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
+    color: blue;
+    
 }
+
+/*# sourceMappingURL=/login.c1c8bff8.css.map */
