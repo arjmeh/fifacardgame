@@ -4,8 +4,13 @@ var password = document.getElementById('password-input');
 function submit() {
     var usernamevalue = document.getElementById('username-input').value;
     var passwordvalue = document.getElementById('password-input').value;
+    var startrating = 60;
     if (usernamevalue === '' || passwordvalue === '') {
         alert('Please enter username and password');
+        return false;
+    }
+    if (usernamevalue.length > 14) {
+        alert('Username must be less than 14 characters');
         return false;
     }
     const key1 = usernamevalue
@@ -27,7 +32,7 @@ function submit() {
             'Access-Control-Allow-Origin': '*'
             },
             body: JSON.stringify({
-            [key1]: {usernamevalue, passwordvalue}
+            [key1]: {usernamevalue, passwordvalue, startrating}
             })
         })
         window.location.href = "index.html";
