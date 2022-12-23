@@ -2,8 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: "Fjalla One", sans-serif; 
 }
+@font-face {
+    font-family: 'Fjalla One';
+    src: url('FjallaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+body {
+    background-color: rgb(49,52,63);
+}
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 .navbar {
     justify-content:center;
@@ -19,10 +32,14 @@
     font-size: 3rem;
     padding: 1rem;
     text-align: center;
+    color: rgb(241,233,212);
     display: flex;
-    background-color: rgb(white);
     align-items: center;
     justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.grid-card {
+    background-color: rgb(241,233,212);
 }
 
 
@@ -49,7 +66,7 @@
 }
 
 a {
-    color: black;
+    color: rgb(241,233,212);
     text-decoration: none;
 }
 
@@ -73,12 +90,13 @@ a {
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: black;
+    background-color: rgb(241,233,212);
     border-radius: 10px;
 }
 
 @media (max-width:600px) {
     .toggle-button {
+        color: rgb(241,233,212);
         display: flex;
     }
     .navbar-links {
@@ -119,23 +137,28 @@ a {
     .gridcontainer {
         display: grid;
         grid-template-columns: 2fr 6fr 2fr;
-        background-color: white;
-        column-gap: 10%;
+        background-color: rgb(49,52,63);
+        column-gap: 5%;
     }
     
     .grid-card {
-        background-color: white;
+        background-color: rgb(241,233,212);
+        border-radius: 30px;
         color: black;
         border-color: black;
+        margin-left: 30px;
     }
     
     .grid-rankings {
-        background-color: white;
+        background-color: rgb(241,233,212);
+        border-radius: 30px;
         color: black;
+        margin-right: 30px;
     }
     
     .grid-minigame {
-        background-color: white;
+        background-color: rgb(202,217,193);
+        border-radius: 30px;
         color: black;
     }
     
@@ -149,16 +172,19 @@ a {
         row-gap: 10%;
     }
     .grid-card {
-        background-color: white;
+        background-color: rgb(241,233,212);
+        border-radius: 30px;
         color: black;
         border-color: black;
     }
     .grid-rankings {
-        background-color: white;
+        background-color: rgb(241,233,212);
+        border-radius: 30px;
         color: black;
     }
     .grid-minigame {
-        background-color: white;
+        background-color: rgb(202,217,193);
+        border-radius: 30px;
         color: black;
     }
 }
@@ -166,6 +192,44 @@ a {
 .card {
     width: 100%;
     min-width: 200px;
+}
+
+/* Penalty Game */
+@media (min-width: 1149px) {
+.gamescreen {
+    width: 100%;
+    background-color: green;
+    height: 400px;
+}
+.goal {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 5%;
+    background-color: white;
+    height: 200px;
+    border: 2px solid black;
+
+}
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 50%;
+    position: relative;
+    top: 30%;
+    left: 45%;
+}
+
+.goalie {
+    height: 100px;
+    width: 60px;
+    background-color: blue;
+    position: relative;
+    left: 45%;
+    top: 50%;
+}
+
 }
 
 
