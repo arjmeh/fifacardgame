@@ -71,13 +71,30 @@ for (const user of userArray.slice(0,10)) {
   const rankCell = document.createElement('td');
   rankCell.textContent = rank;  // set the rank in the rank column
   row.appendChild(rankCell);
+  rankCell.style.padding = '0.5rem';
   rankCell.style.border = '1px solid black';
   const nameCell = document.createElement('td');
   nameCell.style.border = '1px solid black';
+  nameCell.style.padding = '0.5rem';
     // add a border around each cell
   nameCell.textContent = user.name.charAt(0).toUpperCase() + user.name.slice(1);
   row.appendChild(nameCell);
+  nameCell.addEventListener('click', () => {
+    // Open a new window or tab
+    const userPage = window.open();
+  
+    // Set the content of the page
+    userPage.document.body.innerHTML = `
+      <h1>${user.name}</h1>
+      <p>Rating: ${user.startrating}</p>
+      <p>Rank: ${rank}</p>
+    `;
+  
+    // Set the URL of the page
+    userPage.location = `user.html?name=${user.name}`;
+  });
   const ratingCell = document.createElement('td');
+  ratingCell.style.padding = '0.5rem';
   ratingCell.style.border = '1px solid black';  // add a border around each cell
   ratingCell.textContent = user.startrating;
   row.appendChild(ratingCell);
@@ -93,12 +110,12 @@ for (const user of userArray.slice(0,10)) {
   rank++;
 }
 table.style.fontSize = '2rem';
-table.style.padding = '2rem';
 // Step 5: find the "grid-rankings" div
 const rankingsDiv = document.querySelector('.grid-rankings');
 
 // Step 6: append the table to the "grid-rankings" div
 rankingsDiv.appendChild(table);
+
     })
     .catch((error) => console.error(error));
 

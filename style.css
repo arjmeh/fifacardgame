@@ -94,7 +94,7 @@ a {
     border-radius: 10px;
 }
 
-@media (max-width:600px) {
+@media (max-width:840px) {
     .toggle-button {
         color: rgb(241,233,212);
         display: flex;
@@ -133,10 +133,10 @@ a {
     }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 841px) {
     .gridcontainer {
         display: grid;
-        grid-template-columns: 2fr 6fr 2fr;
+        grid-template-columns: 3fr 3fr 3fr;
         background-color: rgb(49,52,63);
         column-gap: 5%;
     }
@@ -146,6 +146,7 @@ a {
         border-radius: 30px;
         color: black;
         border-color: black;
+        padding: 1.5rem;
         margin-left: 30px;
     }
     
@@ -153,6 +154,7 @@ a {
         background-color: rgb(241,233,212);
         border-radius: 30px;
         color: black;
+        padding: 1.5rem;
         margin-right: 30px;
     }
     
@@ -160,31 +162,36 @@ a {
         background-color: rgb(202,217,193);
         border-radius: 30px;
         color: black;
+        padding: 1.5rem;
+        text-align: center;
     }
     
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 840px) {
     .gridcontainer {
         display: grid;
         grid-template-rows: 2fr 2fr 2fr;
-        row-gap: 10%;
+        row-gap: 5%;
     }
     .grid-card {
         background-color: rgb(241,233,212);
         border-radius: 30px;
         color: black;
+        padding: 1.5rem;
         border-color: black;
     }
     .grid-rankings {
         background-color: rgb(241,233,212);
         border-radius: 30px;
+        padding: 1.5rem;
         color: black;
     }
     .grid-minigame {
         background-color: rgb(202,217,193);
         border-radius: 30px;
+        padding: 1.5rem;
         color: black;
     }
 }
@@ -195,41 +202,7 @@ a {
 }
 
 /* Penalty Game */
-@media (min-width: 1149px) {
-.gamescreen {
-    width: 100%;
-    background-color: green;
-    height: 400px;
-}
-.goal {
-    width: 80%;
-    position: relative;
-    left: 10%;
-    top: 5%;
-    background-color: white;
-    height: 200px;
-    border: 2px solid black;
 
+.minigames-list {
+    list-style: none;
 }
-.ball {
-    width: 50px;
-    height: 50px;
-    background-color: brown;
-    border-radius: 50%;
-    position: relative;
-    top: 30%;
-    left: 45%;
-}
-
-.goalie {
-    height: 100px;
-    width: 60px;
-    background-color: blue;
-    position: relative;
-    left: 45%;
-    top: 50%;
-}
-
-}
-
-

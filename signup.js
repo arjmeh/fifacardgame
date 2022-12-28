@@ -27,6 +27,7 @@ function submit() {
     var usernamevalue = document.getElementById('username-input').value;
     var passwordvalue = document.getElementById('password-input').value;
     var startrating = 60;
+    const dateJoined = new Date().toLocaleDateString();
     if (usernamevalue === '' || passwordvalue === '') {
         alert('Please enter username and password');
         return false;
@@ -51,10 +52,11 @@ function submit() {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin': '*',
+            'date-joined': dateJoined
             },
             body: JSON.stringify({
-            [key1]: {usernamevalue, passwordvalue, startrating}
+            [key1]: {usernamevalue, passwordvalue, startrating, dateJoined}
             })
         })
         setCookie('logged_in', true, 0);
