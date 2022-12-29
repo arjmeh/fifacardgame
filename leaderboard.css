@@ -1,0 +1,65 @@
+table tr {
+    width: 100%;
+    background-color: rgb(223,115,97);
+    border-radius: 20px;
+  }
+
+.styled-row {
+    width: 100%;
+    background-color: rgb(223,115,97);
+    border-radius: 20px;
+}
+table {
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: rgb(49,52,63);
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Fjalla One", sans-serif; 
+    color: rgb(241,233,212);
+}
+@font-face {
+    font-family: 'Fjalla One';
+    src: url('FjallaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  table tr td {
+    text-align: center;
+    
+  }
+
+  table tr td:first-child {
+    font-size: larger;
+    font-weight: bold;
+  }
+  table tr {
+    font-size: 2em;
+  }
+
+  .title {
+    color: rgb(241,233,212);
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  a {
+    text-decoration: none;
+  }
+

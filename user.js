@@ -9,13 +9,9 @@ fetch('http://127.0.0.1:5000/get')
   .then(response => response.text())
   .then(data => {
     const responsedata = JSON.parse(data);  // Parse the data into a JavaScript object
-    console.log(responsedata);
-    console.log(name);
     if (responsedata.hasOwnProperty(name)) {  // Check if responsedata has a property with the name of "name"
       const rating = responsedata[name]["startrating"];
-      console.log(rating);
       const ratingElem = document.getElementsByClassName('rating')[0];
-      console.log(ratingElem);
       ratingElem.innerText = `Rating: ${rating}`;
 
       // Get an array of all the startrating values
@@ -30,8 +26,7 @@ fetch('http://127.0.0.1:5000/get')
 
       // Zip the names and ratings arrays together, and add the rank as the third element
       const nameRatings = names.map((name, index) => [name, ratings[index], index + 1]);
-
-      console.log(nameRatings);  //
+  //
 
       // Find the element with the matching name in the nameRatings array
       const nameRating = nameRatings.find(([n]) => n === name);

@@ -48,9 +48,11 @@ a {
 .user-info {
     background-color: rgb(241,233,212);
     border-radius: 20px;
+    padding: 1.5rem;
 }
 
 .user-card {
+    padding: 1.5rem;
     background-color: rgb(205,217,195);
     border-radius: 20px;
 }
@@ -67,5 +69,5 @@ a {
     height: auto;
 }
 
-  
+
 

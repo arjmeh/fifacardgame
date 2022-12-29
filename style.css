@@ -94,7 +94,7 @@ a {
     border-radius: 10px;
 }
 
-@media (max-width:840px) {
+@media (max-width:740px) {
     .toggle-button {
         color: rgb(241,233,212);
         display: flex;
@@ -132,8 +132,8 @@ a {
         height: auto;
     }
 }
-
-@media (min-width: 841px) {
+/*display computer*/
+@media (min-width: 741px) {
     .gridcontainer {
         display: grid;
         grid-template-columns: 3fr 3fr 3fr;
@@ -155,6 +155,7 @@ a {
         border-radius: 30px;
         color: black;
         padding: 1.5rem;
+        text-align: center;
         margin-right: 30px;
     }
     
@@ -168,12 +169,14 @@ a {
     
 
 }
-
-@media (max-width: 840px) {
+/*display phone*/
+@media (max-width: 740px) {
     .gridcontainer {
         display: grid;
         grid-template-rows: 2fr 2fr 2fr;
         row-gap: 5%;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .grid-card {
         background-color: rgb(241,233,212);
@@ -187,12 +190,17 @@ a {
         border-radius: 30px;
         padding: 1.5rem;
         color: black;
+        text-align: center;
     }
     .grid-minigame {
         background-color: rgb(202,217,193);
         border-radius: 30px;
         padding: 1.5rem;
         color: black;
+    }
+    .minigames-list {
+        list-style: none;
+        text-align: center;
     }
 }
 
@@ -205,4 +213,24 @@ a {
 
 .minigames-list {
     list-style: none;
+    text-align: center;
 }
+
+.button {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    margin: 0.5rem;
+    border:0.1em solid #FFFFFF;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+    transition: all 0.2s;
+    font-weight: 900;
+}
+.button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }

@@ -63,10 +63,12 @@ for (const user of userArray) {
   console.log(`${user.name}: ${user.startrating}`);
 }
 const table = document.createElement('table');
+
+document.body.appendChild(table);
 table.style.borderCollapse = 'collapse';
 table.style.margin = 'auto';  // center the table within the parent element  // remove the space between the cells and create a single border around each cell
 let rank = 1;
-for (const user of userArray.slice(0,10)) {
+for (const user of userArray.slice(0,8)) {
   const row = document.createElement('tr');
   const rankCell = document.createElement('td');
   rankCell.textContent = rank;  // set the rank in the rank column
