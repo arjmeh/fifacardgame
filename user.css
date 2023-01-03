@@ -37,7 +37,7 @@ a {
     text-decoration: none;
 }
 
-
+@media (min-width:741px) {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -68,6 +68,48 @@ a {
     max-width: 200px;
     height: auto;
 }
+.user-games {
+    padding: 1.5rem;
+    background-color: rgb(241,233,212);
+    border-radius: 20px;
+}
+}
 
 
-
+@media (max-width:740px) {
+    .grid-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 1rem;
+        text-align: center;
+      }
+      .user-info {
+        background-color: rgb(241,233,212);
+        border-radius: 20px;
+        padding: 1.5rem;
+    }
+    
+    .user-card {
+        padding: 1.5rem;
+        background-color: rgb(205,217,195);
+        border-radius: 20px;
+    }
+    .user-games {
+        padding: 1.5rem;
+        background-color: rgb(241,233,212);
+        border-radius: 20px;
+    }
+    .title {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+    .rating,.rank,.date-joined {
+        font-size: 1.5rem;
+    }
+    .card {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    
+}

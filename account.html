@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <h1 class="brand-title">Account</h1>
+    <div class="grid-container">
+        <div class="username">
+            <label for="input" style="font-size: 1.5em;">Username</label>
+            <input type="text" class="usernameinput" id="usernameinput" readonly>
+            <button class="button" id="edit" onclick="edit()">Edit</button>
+            <button class="button" id="save" onclick="save()">Save</button>
+        </div>
+        <div class="password">
+            <label for="input" style="font-size: 1.5em;">Password</label>
+            <input type="text" class="usernameinput" id="passwordinput" readonly style="width: 300px;">
+            <button class="button" id="editpassword" onclick="editpassword()">Edit</button>
+            <button class="button" id="savepassword" onclick="savepassword()">Save</button>
+        </div>
+        <div class="email">
+            <label for="input" style="font-size: 1.5em;">Email</label>
+            <input type="text" class="usernameinput" id="emailinput" readonly style="width: 300px;">
+        </div>
+        <div class="delete">
+            <button id="delete" class="deletebtn" onclick="deletefunc()">
+                    Delete Account
+                </button>
+        </div>
+        <div class="home">
+            <button class="button"><a href="index.html">Home</a></button>
+        </div>
+        </div>
+        <div class="email"></div>
+    </div>
+
+
+
+    <script src="account.js"></script>
+</body>
+</html>

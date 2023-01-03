@@ -3,11 +3,13 @@
 // npx parcel index.html to run local server
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
+const otherbuttons = document.getElementsByClassName('otherbuttons')[0]
+const accountButton = document.querySelector('.account-button');
+const minigameButton = document.querySelector('.minigame-button');
+const phonenavbar = document.getElementsByClassName('phonenavbar')
 toggleButton.addEventListener('click', async () => {
-    navbarLinks.classList.toggle('active')
-
-})
+  phonenavbar.style.display='grid';
+});
     //data is the get data
 
 
@@ -33,7 +35,10 @@ function getCookie(name) {
 }
 
 
-
+if (!getCookie('logged_in')) {
+  // Redirect the user to the login page if they are not logged in
+  window.location.href = "login.html";
+  }
 
 
 

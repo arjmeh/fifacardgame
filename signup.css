@@ -43,7 +43,14 @@ body {
     font-size: 1em;
     margin-bottom: 1em;
 }
-
+#email-input {
+    border: 0.1em solid;
+    border-color: grey;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
 
 .grid-title {
     font-size: 3rem;
