@@ -46,7 +46,7 @@ fetch('http://127.0.0.1:5000/get')
         console.error(`Could not find '${name}' in nameRatings`);
       }
     } else {
-      console.error(`Could not find '${name}' in responsedata`);
+      document.write('404 Error: Could not find '+ name + ' in users. lol do you think youre smart trying to hack the website heheheh');
     }
   })
   .catch((error) => console.error(error));

@@ -88,7 +88,6 @@ function forgotpassword() {
   }
   else {
     var emailvalue = emailinput.value;
-    console.log(emailvalue);
     fetch('http://127.0.0.1:5000/verifyemail', {
       method: 'POST',
       headers: {
@@ -103,7 +102,6 @@ function forgotpassword() {
    .then(result => {
     console.log(result);
     if (JSON.parse(result) == "true") {
-      console.log('aosihfoisafj');
       fetch('http://127.0.0.1:5000/get')
       .then(response => response.text())
       .then(data => {
@@ -114,7 +112,6 @@ function forgotpassword() {
             allemails.push(responsedata[prop].emailvalue);
           }
         }
-        console.log(allemails);
         const containsEmail = allemails.includes(emailvalue);
         if (containsEmail) {
           console.log('sending email');

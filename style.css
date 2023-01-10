@@ -195,6 +195,7 @@ a {
     }
     .phonenavbar {
         display: none;
+        text-align: center;
     }
     
 
@@ -246,10 +247,15 @@ a {
         display: block;
     }
     .phonenavbar {
-        display: grid;
+        display: none;
         grid-template-rows: 1fr 1fr;
     }
-
+    .phonenavbar h1 {
+        padding: 0.5rem;
+    }
+    .phonenavbar:hover {
+        background-color: rgb(77, 81, 98);
+    }
 }
 
 .card {

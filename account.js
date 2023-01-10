@@ -35,7 +35,7 @@ function edit() {
 }
 
 function save() {
-    var result = confirm('Are you sure you want to change your name?');
+    var result = confirm('Are you sure you want to change your username?');
     if (result) {
       fetch('http://127.0.0.1:5000/get')
         .then(response => response.text())
@@ -117,6 +117,7 @@ function deletefunc() {
 }).then(response => response.json())
   setCookie('username', username, -1)
   setCookie('password', password, -1)
+  setCookie('email', email, -1)
   window.location.href = 'signup.html'
 }
 else {

@@ -52,7 +52,8 @@ body {
 .brand-title {
     font-size: 3rem;
     text-align: center; /* add more space on either side of the text */
-    color: rgb(241,233,212)
+    color: rgb(241,233,212);
+    padding: 1rem;
   }
 
 
@@ -120,15 +121,13 @@ body {
 
 
 .deletebtn {
-  color: red;
-  font-size: 1.5em;
-  width: 200px;
+  font-size: 1.4em;
+  width: 100px;
   text-align: center;
-  background-color: rgb(79, 82, 127);
+  background-color: rgb(241,233,212);
   border: none;
-  height: 50px;
-  border-radius: 20px;
-  font-family: 'Inter', Arial;
+  height: 40px;
+  border-radius: 5px;
 }
 
 
@@ -138,4 +137,15 @@ body {
 a {
   color: #000000;
   text-decoration: none;
+}
+
+.homebutton {
+  background-color: rgb(241,233,212);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  font-size: 1.4em;
+  color: rgb(49,52,63);
 }

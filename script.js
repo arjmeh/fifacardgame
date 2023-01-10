@@ -6,10 +6,21 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 const otherbuttons = document.getElementsByClassName('otherbuttons')[0]
 const accountButton = document.querySelector('.account-button');
 const minigameButton = document.querySelector('.minigame-button');
-const phonenavbar = document.getElementsByClassName('phonenavbar')
+const phonenavbar = document.querySelector('.phonenavbar');
+var toggled = false;
+if (!toggled) {
 toggleButton.addEventListener('click', async () => {
-  phonenavbar.style.display='grid';
+  if (!toggled) {
+  phonenavbar.style.display = 'grid';
+  toggled = true;
+  }
+  else {
+    phonenavbar.style.display = 'none';
+    toggled = false;
+  }
 });
+}
+
     //data is the get data
 
 
@@ -43,7 +54,9 @@ if (!getCookie('logged_in')) {
 
 
 //leaderboard
-fetch('http://127.0.0.1:5000/get')
+fetch('http://127.0.0.1:5000/get', {
+  mode: 'cors'
+})
     .then(response => response.text())
     .then(data => {
     const responsedata = data;
