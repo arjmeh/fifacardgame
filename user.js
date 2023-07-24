@@ -16,13 +16,14 @@ fetch('http://127.0.0.1:5000/get')
 
       // Get an array of all the startrating values
       const ratings = Object.values(responsedata).map(user => user.startrating);
+      console.log(ratings);
       // Sort the array in descending order
       ratings.sort((a, b) => b - a);
 
       // Get an array of all the names
       const names = Object.keys(responsedata);
+      console.log(names);
       // Sort the array in ascending order
-      names.sort();
 
       // Zip the names and ratings arrays together, and add the rank as the third element
       const nameRatings = names.map((name, index) => [name, ratings[index], index + 1]);

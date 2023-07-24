@@ -77,6 +77,7 @@ var emailbutton = document.getElementsByClassName('submitemail');
 function unhide() {
   emailinput.style.display = 'block';
   emailbutton[0].style.display = 'block';
+  emailbutton[0].style.textAlign = 'center';
   //alert('An email will be sent to the email address that is associated with your account.');
 }
 

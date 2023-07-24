@@ -157,3 +157,26 @@ physicalbutton.addEventListener("click", function() {
   updateStat('physical');
 })
   
+//coins
+var coinbutton = document.getElementById('coinbutton');
+var username = getCookie('username');
+function getCoins() {
+    fetch('http://127.0.0.1:5000/updatecoins', {
+      mode: 'cors',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
+      body: JSON.stringify({
+        username: getCookie('username'),
+        coinamount: 1
+      })
+    })
+    .then(response => response.text())
+    .then(data => {
+      var responsedata = JSON.parse(data);
+      coinstext.innerHTML = 'Coins: ' + responsedata;
+    })
+} 
+coinbutton.style.textAlign = 'center';

@@ -27,6 +27,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    text-align: center;
 }
 
 .grid-infos {
@@ -92,4 +93,14 @@ body {
   a {
     color: rgb(49, 52, 63);
     text-decoration: none;
+}
+.coinbutton {
+    background-color: rgb(241,233,212);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.4em;
+    color: rgb(49,52,63);
 }
